@@ -112,7 +112,7 @@
                     </p>
                     
                     <div class="dropdown">
-                        <a href="./assets/docs/Salah MESTAOUI.pdf" id="syntheseE5" target="_blank">
+                        <a href="./assets/docs/cvCanva.pdf" id="syntheseE5" target="_blank">
                             <span>
                                 <i class="fa fa-eye"></i>
                                 Consulter CV
@@ -153,7 +153,7 @@
                         <h3 class="card-title">2023 - 2025</h3>
                         <h3 class="card-subtitle">BTS SIO option SLAM</h3>
                         <p class="card-detail">
-                            ILEC, Nice
+                            
                         </p>
                     </div>
                 </div>
@@ -196,13 +196,171 @@
                     <h3>Alternance</h3>
                     <button class="acc-btn">PRO BTP, Cagnes-sur-mer</button>
                     <div class="acc-content">
-                        <p>
-                            PRO BTP est un organisme de retraite complémentaire qui gère les cotisations et les droits à la retraite des salariés du secteur du BTP (Bâtiment et Travaux Publics) dans le cadre du régime Agirc-Arrco. Il collecte les cotisations, tient à jour les droits des salariés, et verse les pensions de retraite complémentaire. PRO BTP accompagne également les entreprises et les assurés dans leurs démarches administratives.
-                        </p>
+
+                        <style>
+                                    .intro-probtp {
+                                        background-color: #e0f0f7;
+                                        border-radius: 16px;
+                                        padding: 30px;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 30px;
+                                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                                        flex-wrap: wrap;
+                                    }
+
+                                    .intro-probtp img {
+                                        max-width: 180px;
+                                        height: auto;
+                                        border-radius: 8px;
+                                    }
+
+                                    .intro-probtp-text {
+                                        max-width: 700px;
+                                        font-size: 1rem;
+                                        line-height: 1.7;
+                                        color: #2c3e50;
+                                    }
+
+                                    .intro-probtp h6 {
+                                        font-size: 1.1rem;
+                                        color: #0073a8;
+                                        margin-bottom: 10px;
+                                        font-weight: bold;
+                                    }
+
+                                    @media (max-width: 768px) {
+                                        .intro-probtp {
+                                            flex-direction: column;
+                                            text-align: center;
+                                        }
+
+                                        .intro-probtp-text {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                </style>
+
+                                <div class="intro-probtp">
+                                    <img src="assets/img/logo probtp.png" alt="Logo PRO BTP">
+                                    <div class="intro-probtp-text">
+                                        <h6>Le groupe PRO BTP</h6>
+                                        <p>
+                                            PRO BTP est un organisme de retraite complémentaire qui gère les cotisations et les droits à la retraite des salariés du secteur du BTP (Bâtiment et Travaux Publics) dans le cadre du régime Agirc-Arrco. Il collecte les cotisations, tient à jour les droits des salariés, et verse les pensions de retraite complémentaire. PRO BTP accompagne également les entreprises et les assurés dans leurs démarches administratives.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                        <style>
+                            .missions-comp {
+                                background: #f9f9f9;
+                                padding: 40px;
+                                border-radius: 16px;
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                                margin-top: 30px;
+                                animation: fadeInUp 1s ease;
+                            }
+                        
+                            .missions h4 {
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                color: #333;
+                                margin-bottom: 20px;
+                                line-height: 1.7;
+                            }
+                        
+                            .missions h5 {
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                margin-top: 30px;
+                                margin-bottom: 15px;
+                                color: #2c3e50;
+                            }
+                        
+                            .missions p {
+                                font-size: 1rem;
+                                color: #555;
+                                line-height: 1.6;
+                                margin-bottom: 15px;
+                            }
+                        
+                            .missions ul {
+                                list-style: none;
+                                padding-left: 0;
+                                margin-top: 15px;
+                            }
+                        
+                            .missions ul li {
+                                position: relative;
+                                padding-left: 30px;
+                                margin-bottom: 10px;
+                                color: #444;
+                                font-size: 1rem;
+                            }
+                        
+                            .missions ul li::before {
+                                content: "✔";
+                                position: absolute;
+                                left: 0;
+                                color: #1abc9c;
+                                font-weight: bold;
+                            }
+                        
+                            @keyframes fadeInUp {
+                                0% {
+                                    transform: translateY(40px);
+                                    opacity: 0;
+                                }
+                                100% {
+                                    transform: translateY(0);
+                                    opacity: 1;
+                                }
+                            }
+                        
+                            /* Optional: Hover effect */
+                            .missions-comp:hover {
+                                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+                                transition: all 0.3s ease;
+                            }
+                        </style>
                         <div class="missions-comp">
                             <div class="missions">
-                                <h4>J'ai pu travaillée sur différents projets :</h4>
-                                <!-- ======= Portfolio Section ======= -->
+                                <h4>
+                                    Dans le cadre de mon alternance, j’ai été missionné par Quentin Viale, référent fonctionnel, pour intervenir sur un besoin métier urgent lié à la sécurité des données personnelles dans le portail ESAA (Espace Sécurisé Agirc-Arrco). La mission consistait à concevoir un service de restriction d’accès permettant de bloquer ou débloquer l’accès au portail ESAA pour des utilisateurs identifiés lors d’incidents de violation de données (VDCP).<br><br>
+                                    L’objectif était de proposer une solution simple, rapide et administrable via le back-office (private office), pour améliorer la réactivité en cas d’incident.<br><br>
+                                    Le projet incluait la rédaction de l’expression de besoin, la définition des règles de gestion, la conception fonctionnelle de l’interface (UI/UX), et l’intégration des contrôles de cohérence sur les fichiers d’import (NSS, références ITOP, etc.).
+                                </h4>
+                        
+                                <h5>Ma mission au sein de l'entreprise</h5>
+                        
+                                <p>
+                                    L’objectif principal était de concevoir un outil permettant de restreindre ou de rétablir l’accès au portail ESAA pour une liste précise d’utilisateurs concernés par un incident de sécurité. Jusqu’alors, ces blocages étaient réalisés manuellement via des scripts SQL, une méthode chronophage et peu fiable dans la durée.
+                                </p>
+                        
+                                <p>
+                                    Ma mission a consisté à formaliser l’expression du besoin fonctionnel, en définissant :
+                                </p>
+                        
+                                <ul>
+                                    <li>Les profils autorisés à utiliser le service,</li>
+                                    <li>Les fonctionnalités clés (blocage, déblocage, export, consultation),</li>
+                                    <li>Les règles de gestion (contrôles sur les fichiers CSV, vérification des NSS, rejet partiel ou total),</li>
+                                    <li>Et les comportements attendus de l’interface (tableaux dynamiques, filtres, pagination…).</li>
+                                </ul>
+
+                            
+                                    <a href="./assets/docs/EB_Service_de_restriction_d_acces_a_ESAA_dans_le_cadre_des_incidents_VDCP_v2 (1) (1).pdf" id="syntheseE5" target="_blank">
+                                        <span>
+                                            <i class="fa fa-eye"></i>
+                                            Consulter l'Expression de besoin
+                                        </span>
+                                    </a>
+                            </div>
+                        </div>
+                        
+
+                    
                             <section id="work" class="portfolio-mf sect-pt4 route">
                                 <div class="container">
                                 <div class="row">
@@ -390,15 +548,7 @@
                                             <div class="row">
                                                 <div class="col-sm-8">
                                                 <h2 class="w-title">Page principale.</h2>
-                                                <div class="w-more">
-                                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                                </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                <div class="w-like">
-                                                    <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                                </div>
-                                                </div>
+                                                </div>                                       
                                             </div>
                                             </div>
                                         </div>
@@ -584,8 +734,8 @@
                 </div>
                 
 
-        
-        
+        </section>
+        <section>
             <div class="contentBx">
                 <h3>Mes réalisations personnel</h3>
                 <button class="acc-btn"><span class="arrow01">Projet de 1ère Année</span></button>

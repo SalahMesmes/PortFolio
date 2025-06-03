@@ -96,7 +96,7 @@
                 <div class="contentBx w50">
                     <h3>💻 À propos de moi</h3>
                     <p>
-                        Je m'appelle MESTAOUI Salah et je suis actuellement en BTS SIO (Services Informatiques aux Organisations) option SLAM à l'Ilec School - Nice. Cette formation m’a permis d’acquérir des compétences en développement web, gestion de bases de données, sécurité informatique et gestion de projets numériques.
+                        Je m'appelle MESTAOUI Salah et je suis actuellement en BTS SIO (Services Informatiques aux Organisations) option SLAM. Cette formation m’a permis d’acquérir des compétences en développement web, gestion de bases de données, sécurité informatique et gestion de projets numériques.
                     </p>
                     <h3>🎯 Projet professionnel</h3>
                     <p>
@@ -431,6 +431,10 @@
                                 <ul>
                                     <li><strong>c. Outils de Développement</strong></li>
                                 </ul>
+                                
+                                
+
+
                                 <p>
                                     Dans mon travail, j’utilise la plupart du temps des outils de développements
                                     fournis par l’entreprise et par l’équipe. Ces outils sont communs à toute l’équipe pour
@@ -448,6 +452,7 @@
 
                                <div class="Projet ">
                                 <div class="Projet-probtp-text">
+                                    
                                 <h9>📌 Projet réalisé – L’ESAA</h9>
                                 <p>
                                     Dans le cadre de mon alternance, j’ai été missionné par Quentin Viale, référent fonctionnel, 
@@ -463,163 +468,120 @@
                                     </span>
                                 </a>
                             <ul>
-                                <li><strong>Ma mission au sein de l'entreprise</strong></li>
+                                <li><strong>Développement réalisé</strong></li>
                             </ul>
+
+                            <style>
+                                .Projet {
+                                background: #e6f4f8; 
+                                padding: 30px;
+                                border-radius: 16px;
+                                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+                                display: flex;
+                                align-items: flex-start;
+                                gap: 20px;
+                                margin-top: 30px;
+                                animation: fadeInUp 1s ease;
+                            }
+                            .Projet-probtp-text h9 {
+                                font-size: 1.2rem;
+                                color: #0077a3; 
+                                margin-bottom: 10px;
+                                font-weight: bold;
+                            }
+
+                            .Projet-probtp-text ul, li {
+                                font-size: 1.2rem;
+                                color: #57d0ee; 
+                                margin-bottom: 10px;
+                                font-weight: bold;
+                            }
+                              .Projet-probtp img {
+                                width: 100%;
+                                max-width: 5000px; /* tu peux ajuster à 2500px ou plus */
+                                height: auto;
+                                border-radius: 8px;
+                                display: block;
+                                margin: 0 auto;
+                            }
+                            .Projet-probtp-text p {
+                                font-size: 1rem;
+                                color: #333;
+                                line-height: 1.6;
+                                margin: 0;
+                            }
+                            .Projet-probtp-text:hover {
+                                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+                                transition: all 0.3s ease;
+                            }
+                               </style>
+
+
+
+                            <p>
+                                J'ai commencé par découper l'expression de besoin en plusieurs tickets JIRA, 
+                                chacun correspondant à une fonctionnalité ou tâche spécifique. 
+                                Chaque ticket a été documenté avec sa description détaillée dans une page Confluence dédiée, 
+                                afin d'assurer une bonne compréhension et un suivi cohérent du projet par l'ensemble des parties prenantes.
+                            </p>
+                            <img src="assets/img/tbjira.png" alt="Outils">
+                            <img src="assets/img/des.PNG" alt="Outils">
+
+                            <p>
+                                Après avoir créé les tickets JIRA et rédigé leurs descriptions, 
+                                nous avons organisé une session de Planning Poker afin d’estimer la charge de travail de chaque tâche. 
+                                Pour cela, nous avons utilisé la méthode de chiffrage basée sur la suite de Fibonacci (1, 2, 3, 5, 8, 13…), 
+                                qui permet de refléter l'incertitude croissante avec la complexité. 
+                                Par exemple, une tâche simple comme l’ajout du bouton d’export CSV a été estimée à 2 points, 
+                                tandis qu’une tâche plus complexe comme la mise en place du contrôle des fichiers d’import 
+                                avec gestion des rejets a été estimée à 8 points. Cette démarche a permis de mieux planifier 
+                                les sprints et de répartir efficacement les efforts de développement.
+                            </p>
+                            <img src="assets/img/chiffrage.PNG" alt="Outils">
+                            <p> 
+                                Une fois les tâches estimées, j’ai commencé le développement sur l’environnement IntelliJ, 
+                                en utilisant les technologies Java, Spring, Angular et AngularJS. La première étape technique consistait 
+                                à créer une tuile dans le Private Office pour accéder au nouveau service de restriction. Pour cela, 
+                                il a été nécessaire de rédiger et exécuter un script SQL afin d’insérer un enregistrement dans la table thumbnail, 
+                                qui permet de référencer les tuiles visibles dans l’interface du Private Office.
+                            </p>
+                            <img src="assets/img/scrpitsql.PNG" alt="Outils">
+                            <img src="assets/img/tuile.png" alt="Outils">
+
+                            <p>
+                                Un bouton cliquable permet d’ouvrir une popin (fenêtre modale) 
+                                dans laquelle l’utilisateur peut saisir les numéros de sécurité sociale à bloquer.
+                            </p>
+                            <img src="assets/img/bouton.png" alt="Outils">
+
+                            <p>
+                                Un bouton cliquable permet 
+                                d’ouvrir une popin afin d’importer un fichier CSV contenant la liste des numéros de sécurité sociale à bloquer.
+                            </p>
+                            <img src="assets/img/supp.PNG" alt="Outils">
+
+                            <p>
+                                Voici un diagramme illustrant le fonctionnement global du service
+                            </p>
+                            <img src="assets/img/diagramme.PNG" alt="Outils">
+
+                            <p>
+                                Après avoir terminé chaque ticket JIRA, je pousse les modifications sur ma branche dédiée,
+                                 puis je publie un message sur le canal Teams afin de demander une revue de code. Une fois la revue validée,
+                                 je procède au build et à l’intégration des changements sur la branche principale.
+                            </p>
+                            <img src="assets/img/msg.png" alt="Outils">
+                            <p>
+                                Les retours de la revue de code m'ont permis d'améliorer la qualité du développement 
+                                en appliquant des corrections et des optimisations sur certaines parties du code.
+                            </p>
+                            <img src="assets/img/commt.png" alt="Outils">
+
                                 </div>
                             </div>
                                
 
-                            
-                          <section id="work" class="portfolio-mf sect-pt4 route">
-                                <div class="container">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                    <div class="work-box">
-                                        <a href="assets/img/tableau.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                        <div class="work-img">
-                                            <img src="assets/img/tableau.png" alt="" class="img-fluid">
-                                        </div>
-                                        </a>
-                                        <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                            <h2 class="w-title">Site Extranet CDG04.</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Web Design</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <div class="w-like">
-                                                <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="work-box">
-                                        <a href="assets/img/code.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                        <div class="work-img">
-                                            <img src="assets/img/code.png" alt="" class="img-fluid">
-                                        </div>
-                                        </a>
-                                        <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                            <h2 class="w-title">Extrait Index.php du site.</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Web Design</span> / <span class="w-date">Oct. 2023</span>
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <div class="w-like">
-                                                <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="work-box">
-                                        <a href="assets/img/glpi.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                        <div class="work-img">
-                                            <img src="assets/img/glpi.png" alt="" class="img-fluid">
-                                        </div>
-                                        </a>
-                                        <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                            <h2 class="w-title">Utilisation de GLPI pour suivi de projet.</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Web Design</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <div class="w-like">
-                                                <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="work-box">
-                                        <a href="assets/img/cotisation.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                        <div class="work-img">
-                                            <img src="assets/img/cotisation.png" alt="" class="img-fluid">
-                                        </div>
-                                        </a>
-                                        <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                            <h2 class="w-title">Site Extranet - Cotisations du CDG04.</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Web Design</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <div class="w-like">
-                                                <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="work-box">
-                                        <a href="assets/img/doc.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                        <div class="work-img">
-                                            <img src="assets/img/doc.png" alt="" class="img-fluid">
-                                        </div>
-                                        </a>
-                                        <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                            <h2 class="w-title">Documentation Procédure Nouvel Utilisateur.</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Informations</span> / <span class="w-date">nov. 2023</span><br>
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <div class="w-like">
-                                                <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <div class="work-box">
-                                        <a href="assets/img/bdd.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                        <div class="work-img">
-                                            <img src="assets/img/bdd.png" alt="" class="img-fluid">
-                                        </div>
-                                        </a>
-                                        <div class="work-content">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                            <h2 class="w-title">Architecture Base De données.</h2>
-                                            <div class="w-more">
-                                                <span class="w-ctegory">Base de Données</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                            </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                            <div class="w-like">
-                                                <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                </div>
-                                </div>
-                            </section>
+                    
                             <!-- Fin Portfolio Section -->
                             </div>
                         </div>
@@ -674,9 +636,6 @@
                                                 <div class="col-sm-8">
                                                 <h2 class="w-title">Dans utilisateurs, (Admin) le directeur peut gérer les utilisateurs en les modifiants, les
                                                     suppriment et aussi ajouter un nouvel utilisateur qui vas être secrétaire.</h2>
-                                                <div class="w-more">
-                                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">Oct. 2023</span>
-                                                </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                 <div class="w-like">
@@ -700,9 +659,6 @@
                                                 <h2 class="w-title">Dans programmes, l’utilisateur peut filtrer les matières selon les années qui sont
                                                     présentes et aussi un filtre pour les classes. Une fonctionnalité pour affecter une
                                                     matière a un programme.</h2>
-                                                <div class="w-more">
-                                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                                </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                 <div class="w-like">
@@ -724,9 +680,6 @@
                                             <div class="row">
                                                 <div class="col-sm-8">
                                                 <h2 class="w-title">Gestion des matières.</h2>
-                                                <div class="w-more">
-                                                    <span class="w-ctegory">Web Design</span> / <span class="w-date">oct. 2023 - mai. 2024</span>
-                                                </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                 <div class="w-like">
@@ -748,9 +701,6 @@
                                             <div class="row">
                                                 <div class="col-sm-8">
                                                 <h2 class="w-title">Gestion des stagiaires.</h2>
-                                                <div class="w-more">
-                                                    <span class="w-ctegory">Informations</span> / <span class="w-date">nov. 2023</span><br>
-                                                </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                 <div class="w-like">
@@ -773,15 +723,12 @@
                                                 <div class="col-sm-8">
                                                 <h2 class="w-title">Une fonction qui permet d'imprimer les
                                                     informations d'un stagiaire.</h2>
-                                                <div class="w-more">
-                                                    <a href="http://51.178.86.117:8120/stage/admin/dashboard/dashboard.php" target="_green" rel="noreferrer noopener">lien vers le projet</a>
+                                                    <button class="acc-btn22">
+                                                        <a href="http://51.178.86.117:8120/tp/blog3/blog/" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
+                                                        <span class="arrow">➜</span>
+                                                     </button>
                                                 </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                <div class="w-like">
-                                                    <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                                                </div>
-                                                </div>
+                                                
                                             </div>
                                             </div>
                                         </div>
@@ -812,7 +759,7 @@
                     <p>Application permettant des calculs mathématiques en Java.</p>
                     <img src="assets/img/Capture d'écran calcul.png" alt="Calculatrice" class="img-fluid">
                 </div>
-                <button class="acc-btn">Projets de 2ème Année</button>
+                <button class="acc-btn"><span class="arrow01">Projet de 2ème Année</span></button>
                 <div class="acc-content">
                     <h4>Jeu de Combat en MVC</h4>
                     <p>Développement d'un jeu de combat avec une architecture MVC.</p>
@@ -821,6 +768,7 @@
                         <a href="http://51.178.86.117:8120/tp/CombatMVc/index.php?controller=jouer&action=frapper&idhit=10" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
                         <span class="arrow">➜</span>
                      </button>
+
                     <h4>LearnIt - Plateforme d'Apprentissage</h4>
                     <p>L'objectif du travail était de développer une plateforme d'apprentissage en ligne, nommée LearnIt, en utilisant une méthode agile et en collaboration avec une équipe de cinq personnes.
 
@@ -836,53 +784,43 @@
                         <a href="https://trello.com/b/7ndNmmxP/taches" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
                         <span class="arrow">➜</span>
                      </button>
+
+                     <h4>Easy CMS</h4>                    
+                     <p>Ce projet a été réalisé en cours de formation dans le cadre d'un BTS SIO option SLAM (2ème année). Il a pour but de créer un socle initial pour la publication de contenu. Il s'agit d'un système de gestion de contenu (CMS) construit avec PHP et MySQL, utilisant l'architecture MVC, le moteur de templates Twig et le framework CSS Bootstrap.</p>
+                     <img src="assets/img/tof easyCMS.png" alt="LearnIt" class="img-fluid"> 
+                     <ul>
+                        <li>
+                            Fonctionnalités principales              
+                        </li>
+                     </ul>
+                     <p>Interface d'édition pour gérer les pages, les contenus et la navigation du site</p>
+                     <img src="assets/img/tof 2 easy.png" alt="LearnIt" class="img-fluid">
+                     <p>Gestion détaillée des contenus avec catégorisation par type : titres, articles, liens et images</p>
+                     <img src="assets/img/tof 4 easy.png" alt="LearnIt" class="img-fluid">
+                     <p>Système de gestion des utilisateurs pour un contrôle d'accès différencié</p>
+                     <img src="assets/img/tof 5 easy.png" alt="LearnIt" class="img-fluid">
+                     <p>Visualisation des pages publiées</p>
+                     <img src="assets/img/tof 3 easy.png" alt="LearnIt" class="img-fluid">
+                     <button class="acc-btn22">
+                        <a href="http://salah.fmdevformation.com/" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
+                        <span class="arrow">➜</span>
+                     </button>
+
+                     <h4>Gestion de cinema</h4>
+                     <p>Ce projet a été réalisé en cours de formation dans le cadre d'un BTS SIO option SLAM (2ème année). C'est d’un logiciel, permettant la gestion des films, des salles, des places assises, le planning et le bilan financier en fonction des salles, des films.</p>
+                     <img src="assets/img/apli 1.png" alt="LearnIt" class="img-fluid">
+                     <p>Liste des films et salles</p>
+                     <img src="assets/img/apli 2.png" alt="LearnIt" class="img-fluid">
+                     <p>L'ajout des films et des salles</p>
+                     <img src="assets/img/apli 4.png" alt="LearnIt" class="img-fluid">
+                     <p>La facturation</p>
+                     <img src="assets/img/apli 3.png" alt="LearnIt" class="img-fluid">
+
                 </div>
                 
 
         </section>
-        <section>
-            <div class="contentBx">
-                <h3>Mes réalisations personnel</h3>
-                <button class="acc-btn"><span class="arrow01">Projet de 1ère Année</span></button>
-                <div class="acc-content">
-                    <h4> Gestion d'un Blog</h4>
-                    <p>Développement d'un site web avec gestion des commentaires en PHP et MySQL.</p>
-                    <img src="assets/img/image.png" alt="Gestion d'un Blog" class="img-fluid">  
-                    <button class="acc-btn22">
-                        <a href="http://51.178.86.117:8120/tp/blog3/blog/" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
-                        <span class="arrow">➜</span>
-                     </button>
-                    <h4><strong>Calculatrice</strong> </h4>
-                    <p>Application permettant des calculs mathématiques en Java.</p>
-                    <img src="assets/img/Capture d'écran calcul.png" alt="Calculatrice" class="img-fluid">
-                </div>
-                <button class="acc-btn">Projets de 2ème Année</button>
-                <div class="acc-content">
-                    <h4>Jeu de Combat en MVC</h4>
-                    <p>Développement d'un jeu de combat avec une architecture MVC.</p>
-                    <img src="assets/img/Capture d'écran 2024-02-22 001521.png" alt="Jeu MVC" class="img-fluid">
-                    <button class="acc-btn22">
-                        <a href="http://51.178.86.117:8120/tp/CombatMVc/index.php?controller=jouer&action=frapper&idhit=10" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
-                        <span class="arrow">➜</span>
-                     </button>
-                    <h4>LearnIt - Plateforme d'Apprentissage</h4>
-                    <p>L'objectif du travail était de développer une plateforme d'apprentissage en ligne, nommée LearnIt, en utilisant une méthode agile et en collaboration avec une équipe de cinq personnes.
-
-                        Cette plateforme permet aux utilisateurs de s'inscrire, de choisir parmi une variété de formations, de les étudier à leur rythme, de passer des évaluations et d'obtenir des certificats de réussite. L'accent était mis sur la convivialité et l'accessibilité, offrant ainsi une expérience d'apprentissage enrichissante et valorisante.</p>
-                    <img src="assets/img/Capture d'écran 2024-02-22 211003.png" alt="LearnIt" class="img-fluid">
-                    <p>Nous avons pu donc créer une base de données pour stocker les données de l'utilistateur.</p>
-                    <img src="assets/img/Capture d'écran 2024-02-22 210200.png" alt="LearnIt" class="img-fluid">
-                    <p>Schéma de BDD.</p>
-                    <img src="assets/img/Capture d'écran 2024-02-23 011601.png" alt="LearnIt" class="img-fluid">
-                    <p>Sur ce projet, nous étions 5 à travailler, personnellement je me suis occupé de la création d'un module, de la modification d'un module, de la suppression d'un module, de l'ajout d'un cours dans un module, de la suppression d'un cours dans un module, de la récupération des cours, ainsi que de la vérification des scans de chaînes dans la partie dédiée..</p>
-                    <img src="assets/img/Capture d'écran 2024-02-23 012228.png" alt="LearnIt" class="img-fluid"> 
-                    <button class="acc-btn22">
-                        <a href="https://trello.com/b/7ndNmmxP/taches" target="_green" rel="noreferrer noopener"><span class="button-text">VOIR LE PROJET</span></a>
-                        <span class="arrow">➜</span>
-                     </button>
-                </div>
-        </section>
-
+        
         <!-- Compétences -->
         <section id="skills">
             <div class="heading white">
@@ -937,24 +875,15 @@
                     <img src="./assets/icons/skills/xampp.svg" alt="Logo Xampp" class="skill-logo">
                     <h3 class="skill-name">Xampp</h3>
                 </div>
-
-                <!-- Administration & gestion IT -->
                 <div class="skill-badge">
-                    <img src="./assets/icons/skills/glpi.svg" alt="Logo GLPI" class="skill-logo">
-                    <h3 class="skill-name">GLPI</h3>
+                    <img src="./assets/icons/skills/angular.svg" alt="Logo Angular" class="skill-logo">
+                    <h3 class="skill-name">Angular</h3>
                 </div>
-                
-                
-                
 
                 <!-- Bureautique & design -->
                 <div class="skill-badge">
                     <img src="./assets/icons/skills/office.svg" alt="Logo MS Office" class="skill-logo">
                     <h3 class="skill-name">MS Office</h3>
-                </div>
-                <div class="skill-badge">
-                    <img src="./assets/icons/skills/canva.svg" alt="Logo Canva" class="skill-logo">
-                    <h3 class="skill-name">Canva</h3>
                 </div>
             </div>
         </section>
@@ -970,7 +899,8 @@
 
                     <h3>📌 Organisation de ma veille</h3>
                     
-                    <p>Pour collecter des informations pertinentes, j’utilise plusieurs sources et outils. Tout d’abord, Feedly, un agrégateur de flux RSS, me permet de centraliser les articles et actualités de sites spécialisés comme OpenAI Blog, Towards Data Science et GitHub Blog. Je complète cette veille en consultant les tendances et discussions d’experts sur LinkedIn et Twitter (X), ainsi qu’en m’abonnant à des newsletters spécialisées comme AI Weekly et The Algorithm (MIT Technology Review).</p>
+                    <p>Pour collecter des informations pertinentes, j’utilise plusieurs sources et outils. Tout d’abord, <a href="https://feedly.com/i/my/me">Feedly</a>
+                        , un agrégateur de flux RSS, me permet de centraliser les articles et actualités de sites spécialisés comme OpenAI Blog, Towards Data Science et GitHub Blog. Je complète cette veille en consultant les tendances et discussions d’experts sur LinkedIn et Twitter (X), ainsi qu’en m’abonnant à des newsletters spécialisées comme AI Weekly et The Algorithm (MIT Technology Review).</p>
                     
                     <p>Une fois les informations collectées, je les trie et les analyse pour conserver uniquement les éléments les plus pertinents. J’organise cette veille à l’aide de Notion et Google Drive, où je classe les articles, études et analyses en différentes catégories. Chaque semaine, j’effectue une synthèse en y ajoutant mes propres observations et des captures d’écran des tendances clés.</p>
 

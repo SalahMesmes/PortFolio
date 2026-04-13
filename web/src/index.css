@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-bg text-content-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-content-primary;
+  }
+
+  p {
+    @apply font-body text-content-secondary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .surface-glass {
+    @apply rounded-2xl border border-white/[0.08] bg-cyber-bg2/65 shadow-card backdrop-blur-card;
+  }
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 48px 48px, 48px 48px;
+  }
+}
+
+.animate-grid-drift {
+  animation: grid-drift 90s linear infinite;
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-shimmer-slow {
+  animation: shimmer 10s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-grid-drift,
+  .animate-shimmer-slow {
+    animation: none;
+  }
+}

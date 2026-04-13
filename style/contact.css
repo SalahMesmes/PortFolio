@@ -1,0 +1,130 @@
+.contactForm {
+    background: #64a6cc;
+    font-size: smaller;
+}
+
+#contact .heading p {
+    text-align: center;
+}
+
+.formBx {
+    min-width: 60%;
+    height: 670px;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.formBx label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.formBx form input,
+.formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background: #9dd5f5;
+    color: #fff;
+    width: 100%;
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx form input[type="submit"] {
+    max-width: 200px;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+    background: linear-gradient(135deg, var(--lBlue) 0%, var(--dBlue) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    box-shadow: var(--btn-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: transform 0.25s var(--btn-ease), box-shadow 0.25s var(--btn-ease), filter 0.2s var(--btn-ease);
+}
+
+.formBx form input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--btn-shadow-hover), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    filter: brightness(1.05);
+}
+
+.formBx form input[type="submit"]:active {
+    transform: translateY(0);
+    filter: brightness(0.98);
+}
+
+.formBx form input[type="submit"]:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.85);
+    outline-offset: 3px;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 40px;
+    padding: 16px 5px 0 0;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 30px;
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.fas.fa-map-marker-alt::before {
+    content: "\f3c5";
+    color: #fff;
+}
+
+.far.fa-envelope::before {
+    content: "\f0e0";
+    color: #fff;
+}

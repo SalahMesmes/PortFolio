@@ -1,0 +1,196 @@
+.dropdown span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px 0;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--lBlue) 0%, var(--dBlue) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: var(--btn-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: transform 0.25s var(--btn-ease), box-shadow 0.25s var(--btn-ease), filter 0.25s var(--btn-ease);
+}
+
+.dropdown span:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-shadow-hover), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  filter: brightness(1.06);
+}
+
+.acc-btn22 {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #4a9eee 0%, #1e3a8a 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  padding: 12px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: var(--btn-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: transform 0.25s var(--btn-ease), box-shadow 0.25s var(--btn-ease), filter 0.2s var(--btn-ease);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.acc-btn22::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 38%,
+    rgba(255, 255, 255, 0.18) 50%,
+    transparent 62%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s var(--btn-ease);
+  pointer-events: none;
+}
+
+.acc-btn22:hover::after {
+  transform: translateX(100%);
+}
+
+.acc-btn22 .button-text {
+  color: #fff;
+}
+
+.acc-btn22:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--btn-shadow-hover), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  filter: brightness(1.05);
+}
+
+.acc-btn22:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.acc-btn22:focus-within {
+  outline: 3px solid rgba(255, 255, 255, 0.75);
+  outline-offset: 3px;
+}
+
+.acc-btn22 a {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.arrow {
+  display: inline-block;
+  transform: rotate(320deg);
+  font-size: 18px;
+}
+
+.arrow01 {
+  background: linear-gradient(135deg, #5aa7f0 0%, #2d5cb8 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 16px rgba(0, 40, 100, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: transform 0.25s var(--btn-ease), box-shadow 0.25s var(--btn-ease), filter 0.2s var(--btn-ease);
+  cursor: default;
+  text-decoration: none;
+  min-width: 180px;
+  max-width: 300px;
+}
+
+.arrow01:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(0, 40, 100, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  filter: brightness(1.04);
+}
+
+
+.dropdown a, .dropdown a:visited {
+  text-decoration: none;
+}
+
+.dropdown a:focus-visible {
+  outline: none;
+}
+
+.dropdown a:focus-visible span {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.95), 0 0 0 5px rgba(19, 66, 168, 0.55);
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #00000026;
+    padding: 12px 16px;
+    margin-top: 8px;
+    z-index: 1;
+  }
+
+  .dropdown-content a:hover {
+      text-decoration: underline;
+      background: rgba(211, 211, 211, 0.466);
+      font-weight: 400;
+  }
+  
+  .dropdown.is-open .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-content a {
+      text-decoration: none;
+      color: #000;
+  }
+
+  .dropdown i {
+    margin-right: 5px;
+    margin-top: 6px;
+  }
+
+  .dropdown i.fa.fa-download::before {
+    content: "\f019";
+  }
+
+  .dropdown i.far.fa-file-pdf-o::before {
+    content: "\f1c1";
+  }
+
+  .dropdown i.far.fa-file-archive::before {
+    content: "\f1c6";
+  }
+
+  .dropdown i.far.fa-file-code::before {
+    content: "\f1c9";
+  }
+
+  .dropdown i.fa.fa-eye::before {
+    content: "\f06e";
+  }
+  
+  .dropdown i.fa.fa-picture-o::before {
+    content: "\f03e";
+  }
+
+  .dropdown i.fa.fa-table::before {
+    content: "\f0ce";
+  }

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync-root": "GITHUB_PAGES=true vite build && cp -f dist/index.html ../index.html && rsync -a dist/assets/ ../assets/"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",
